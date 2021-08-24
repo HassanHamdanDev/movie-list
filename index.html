@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My Movie list</title>
+</head>
+<body>
+    <header>
+        <h1>My Movie list</h1>
+    </header>
+    <main>
+        <section>
+            <form id="movieForm">
+                <fieldset>
+                    <legend>New Movie</legend>
+                    <label for="movieName">Name</label>
+                    <input type="text" id="movieName" name="movieName">
+                    <label for="movieImage">Image</label>
+                    <select name="movieImage" id="movieImage">
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Detective">Detective</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="History">History</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Musical">Musical</option>
+                        <option value="Pirate">Pirate</option>
+                        <option value="Romantic">Romantic</option>
+                        <option value="SCI-FI">SCI-FI</option>
+                        <option value="War">War</option>
+                        <option value="Western">Western</option>
+                      </select>
+                    <label for="movieYear">Release</label>
+                    <input type="text" id="movieYear" name="movieYear">
+                    <div>
+                        <button type="submit" id="saveButton">Save</button>
+                        <button id="clearLSButton" onclick="clearLS();">Clear LS</button>
+                    </div>
+                    
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <table id="movieTable"></table>
+        </section>
+    </main>
+    <footer>
+        All Right Reseved 2021 &copy; ASAC
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
